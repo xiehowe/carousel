@@ -2,7 +2,22 @@
 # myModule = require "myModule"
 # Reference the contents by name, like myModule.myFunction() or myModule.myVar
 
+Function::property = (prop, desc) ->
+  Object.defineProperty @prototype, prop, desc
+
 class module.exports
+	@property 'x',
+		set: (value) -> @_scroll.x = value
+		get: -> @_scroll.x
+
+	@property 'y',
+		set: (value) -> @_scroll.y = value
+		get: -> @_scroll.y
+
+	# @property 'width',
+	# 	set: (value) -> @_scroll.width = value
+	# 	get: -> @_scroll.width
+
 	constructor: (layers, opt={}) ->
 		# set your own value
 		boxWidth = opt.boxWidth or 100
@@ -107,3 +122,5 @@ class module.exports
 		scroll.on Events.ScrollEnd, -> ignore = false
 		scroll.on Events.MouseDown, -> ignore = true
 
+		@_scroll = scroll
+		@_boxes = boxes
