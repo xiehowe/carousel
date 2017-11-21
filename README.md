@@ -15,6 +15,7 @@ Carousel = require 'Carousel'
 ```
     
 ## Usage
+Push your layers into an array, and pass this array to the carousel. For example: 
 
 ```coffee
 Carousel = require 'Carousel'
