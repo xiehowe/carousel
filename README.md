@@ -36,9 +36,9 @@ carousel = new Carousel layers,
     y: 100
     width: Screen.width
     height: 200
-    boxWidth: 100                   # width of the boxes in carousel, align this to your layers
-    boxHeight: 100                  # height of the boxes in carousel, align this to your layers
-    boxY: Align.center              # y position of the boxes in carousel
+    layerWidth: 100                 # width of the layers in carousel, align this to your layers
+    layerHeight: 100                # height of the layers in carousel, align this to your layers
+    layerY: Align.center            # y position of the layers in carousel
     scaleWidth: Screen.width / 4    # width of the area where scaling will take place, relative to the middle point. Greater the value, smoother the scaling 
     scaleRatio: 0.3                 # scale ratio for the layers. Preferably less than 1
     scaleOriginY: 0.5               # y origin for scale. 0.5 for scaling from the center
