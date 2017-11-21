@@ -32,20 +32,20 @@ Additionally you can customize the parameters:
 ```coffee
 carousel = new Carousel layers,
     backgroundColor: '#f8f8f8'
-	x: Align.center
-	y: 100
-	width: Screen.width
-	height: 200
-	boxWidth: 100                   # width of the boxes in carousel, align this to your layers
-	boxHeight: 100                  # height of the boxes in carousel, align this to your layers
-	boxY: Align.center              # y position of the boxes in carousel
-	scaleWidth: Screen.width / 4    # width of the area where scaling will take place, relative to the middle point. Greater the value, smoother the scaling 
-	scaleRatio: 0.3                 # scale ratio for the layers. Preferably less than 1
-	scaleOriginY: 0.5               # y origin for scale. 0.5 for scaling from the center
-	space: 0                        # contributes to the space between layers
-	scrollSpeed: 1                  # scroll speed for carousel
-	innerThreshold: 100             # width of the area where an increasing x offset is given to layers, relative to the middle point. Tweak this value with caution
-	outerThreshold: 200             # width of the area where x offset is given to layers, relative to the middle point. Tweak this value with caution
-	offset: 50                      # the maximum x offset when layers are being scaled. Tweak this value with caution
-	fadeOutRatio: 1.5               # contributes to the final space between scaled-down layers. Tweak this value with caution
+    x: Align.center
+    y: 100
+    width: Screen.width
+    height: 200
+    boxWidth: 100                   # width of the boxes in carousel, align this to your layers
+    boxHeight: 100                  # height of the boxes in carousel, align this to your layers
+    boxY: Align.center              # y position of the boxes in carousel
+    scaleWidth: Screen.width / 4    # width of the area where scaling will take place, relative to the middle point. Greater the value, smoother the scaling 
+    scaleRatio: 0.3                 # scale ratio for the layers. Preferably less than 1
+    scaleOriginY: 0.5               # y origin for scale. 0.5 for scaling from the center
+    space: 0                        # contributes to the space between layers
+    scrollSpeed: 1                  # scroll speed for carousel
+    innerThreshold: 100             # width of the area where an increasing x offset is given to layers, relative to the middle point. Tweak this value with caution
+    outerThreshold: 200             # width of the area where x offset is given to layers, relative to the middle point. Tweak this value with caution
+    offset: 50                      # the maximum x offset when layers are being scaled. Tweak this value with caution
+    fadeOutRatio: 1.5               # contributes to the final space between scaled-down layers. Tweak this value with caution
 ```
