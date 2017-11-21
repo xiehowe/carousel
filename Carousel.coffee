@@ -20,10 +20,10 @@ class module.exports
 
 	constructor: (layers, opt={}) ->
 		# set your own value
-		boxWidth = opt.boxWidth or 100
-		boxHeight = opt.boxHeight or 100
+		layerWidth = opt.layerWidth or 100
+		layerHeight = opt.layerHeight or 100
 
-		boxY = if opt.boxY == undefined then Align.center else opt.boxY
+		layerY = if opt.layerY == undefined then Align.center else opt.layerY
 		
 		scaleRatio = if opt.scaleRatio == undefined then 0.5 else opt.scaleRatio
 		scaleOriginY = if opt.scaleOriginY == undefined then 0.5 else opt.scaleOriginY
@@ -49,8 +49,8 @@ class module.exports
 		# do not change
 		boxes = []
 		contents = []
-		inset = viewWidth / 2 - boxWidth / 2
-		# offset = boxWidth * (1 - scaleRatio) / 2
+		inset = viewWidth / 2 - layerWidth / 2
+		# offset = layerWidth * (1 - scaleRatio) / 2
 		
 		scroll = new ScrollComponent
 			scrollVertical: false
@@ -72,15 +72,15 @@ class module.exports
 		for i in [0...amount]
 			box = new Layer
 				name: 'box' + (i + 1)
-				width: boxWidth
-				height: boxHeight
+				width: layerWidth
+				height: layerHeight
 				scale: 1
-				x: i * (boxWidth + space)
+				x: i * (layerWidth + space)
 				backgroundColor: 'transparent'
 	
 			boxes.push(box)
 			box.parent = scroll.content
-			box.y = boxY
+			box.y = layerY
 		
 			layerInList = layers[i]
 			layerInList.parent = box
