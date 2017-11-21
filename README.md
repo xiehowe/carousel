@@ -40,7 +40,7 @@ carousel = new Carousel layers,
     layerHeight: 100                # height of the layers in carousel, align this to your layers
     layerY: Align.center            # y position of the layers in carousel
     scaleWidth: Screen.width / 4    # width of the area where scaling will take place, relative to the middle point. Greater the value, smoother the scaling 
-    scaleRatio: 0.3                 # scale ratio for the layers. Preferably less than 1
+    scaleRatio: 0.4                 # scale ratio for the layers. Preferably less than 1
     scaleOriginY: 0.5               # y origin for scale. 0.5 for scaling from the center
     space: 0                        # contributes to the space between layers
     scrollSpeed: 1                  # scroll speed for carousel
